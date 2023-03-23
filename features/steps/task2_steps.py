@@ -1,3 +1,5 @@
+import time
+
 import requests
 from behave import given, when, then
 
@@ -21,11 +23,14 @@ def step_given_api_key(context, key):
 @when('I get information for "{code}"')
 def step_get_information(context, code):
     global response
+    time.sleep(2)
     response = requests.get(api_url.format(code=code), params={"access_key": api_key})
-
 
 @then('the response should have status code {status_code:d}')
 def step_response_status_code(context, status_code):
+    if response.status_code != status_code:
+        print(f"Actual status code: {response.status_code}")
+        print(f"Response content: {response.text}")
     assert response.status_code == status_code
 
 
@@ -39,4 +44,5 @@ def step_response_country_name(context, country_name):
 def step_create_country(context, name, alpha2, alpha3):
     global response
     payload = {"name": name, "alpha2Code": alpha2, "alpha3Code": alpha3}
+    time.sleep(2)
     response = requests.post(api_url, params={"access_key": api_key}, json=payload)

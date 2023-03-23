@@ -4,6 +4,10 @@ This project is designed to test the CountryLayer API and https://demo.evershop.
 using Behave and Python. The project contains feature files and step files that define 
 various scenarios for validating the API's functionality and web elements behavior .
 
+## Video Demo
+
+[![Watch the video](./miniature-YTB.png)](https://youtu.be/e4q3bKdRYYc)
+
 ## Project Structure
 - features/: This folder contains the Gherkin feature files defining the test scenarios.
 - features/steps/: This folder contains the Python step files implementing the step definitions for the test scenarios.

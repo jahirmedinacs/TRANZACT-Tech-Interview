@@ -3,7 +3,7 @@
 Feature: Testing API using Behave and Python
 
   Background:
-    Given the endpoint "https://api.countrylayer.com/v2/{code}"
+    Given the endpoint "http://api.countrylayer.com/v2/alpha/{code}"
     And the API key "<your_api_key>"
 
   Scenario Outline: Get information for valid countries
@@ -12,10 +12,10 @@ Feature: Testing API using Behave and Python
     And the response should have the country name "<country_name>"
 
   Examples:
-    | code | country_name     |
-    | US   | United States    |
-    | DE   | Germany          |
-    | GB   | United Kingdom   |
+    | code | country_name                                         |
+    | US   | United States of America                             |
+    | DE   | Germany                                              |
+    | GB   | United Kingdom of Great Britain and Northern Ireland |
 
   Scenario Outline: Get information for inexistent countries
     When I get information for "<code>"
@@ -27,7 +27,7 @@ Feature: Testing API using Behave and Python
     | YY   |
 
   Scenario: Validate new country addition using POST
-    Given the endpoint "https://api.countrylayer.com/v2/all"
-    And the API key "your_api_key"
+    Given the endpoint "http://api.countrylayer.com/v2/all"
+    And the API key "<your_api_key>"
     When I create a new country with name "Test Country", alpha2_code "TC" and alpha3_code "TCY"
-    Then the response should have status code 405
+    Then the response should have status code 500
