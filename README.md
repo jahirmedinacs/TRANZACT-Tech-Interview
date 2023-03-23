@@ -26,7 +26,7 @@ Follow these steps to set up the project on your local machine:
 ### Windows, macOS, and Linux
 
 1. Clone the repository or download the project files:
-> git clone https://github.com/yourusername/tranzact-technical-challenge.git
+> git clone https://github.com/jahirmedinacs/tranzact-technical-challenge.git
 2. If you don't have Git installed, download the project files as a ZIP archive and extract them to a folder on your local machine.
 3. Open a terminal (Command Prompt on Windows) and navigate to the project folder:
 > cd tranzact-technical-challenge
