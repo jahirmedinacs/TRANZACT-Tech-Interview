@@ -51,7 +51,7 @@ The script will run all the scenarios defined in the feature files and display t
 If you encounter any issues during the installation or test execution, ensure that you have installed the correct versions of Python and the required packages. Additionally, double-check your API key and endpoint URLs in the configuration files.
 
 ## License
-This project is released under the MIT License. See the LICENSE file for more information.
+This project is released under the GNU General Public License v3.0. See the LICENSE file for more information.
 
 ## Contributing
 To contribute to the project, please open an issue or submit a pull request on the project's GitHub repository.
