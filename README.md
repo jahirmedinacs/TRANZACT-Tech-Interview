@@ -17,8 +17,10 @@ requirements.txt: This file lists the required Python packages for the project.
 
 To run this project, you need to have the following software installed on your system:
 
-- Python 3.6 or later
+- [Python 3.6 or later](https://www.python.org/downloads/)
+- [Allure Report](https://docs.qameta.io/allure/#_installing_a_commandline)
 - Git (optional, for cloning the repository)
+
 
 ## Installation
 Follow these steps to set up the project on your local machine:
