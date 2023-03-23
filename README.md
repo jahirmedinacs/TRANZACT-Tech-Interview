@@ -26,10 +26,10 @@ Follow these steps to set up the project on your local machine:
 ### Windows, macOS, and Linux
 
 1. Clone the repository or download the project files:
-> git clone https://github.com/jahirmedinacs/tranzact-technical-challenge.git
+> git clone https://github.com/jahirmedinacs/TRANZACT-Tech-Interview.git
 2. If you don't have Git installed, download the project files as a ZIP archive and extract them to a folder on your local machine.
 3. Open a terminal (Command Prompt on Windows) and navigate to the project folder:
-> cd tranzact-technical-challenge
+> cd TRANZACT-Tech-Interview
 4. Create a virtual environment:\
 > python -m venv venv
 5. Activate the virtual environment:
